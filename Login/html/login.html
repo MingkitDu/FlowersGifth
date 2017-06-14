@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../index/css/iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../../index/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<script src="../../index/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../index/js/js.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Chooselogintype.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Chooseregistertype.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Logincheck.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Phonelogincheck.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Onload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Registercheck.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Phoneregistercheck.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--顶部导航栏-->
+		<div class="top_nav">
+			<div class="top_nav_inner">
+				<!--顶部导航栏左边-->
+				<ul class="top_nav_inner_left">
+					<li>
+						<span class="iconfont">&#xe607;</span>
+						<a href="">收藏鲜花网</a>
+					</li>
+					<!--关注微信-->
+					<li class="focus_wechat navhover">
+						<span class="iconfont">&#xe603;</span>
+						<a href="">关注微信</a>
+						<div class="check_wechat">
+							<img src="../../img/app_qrcode.jpg" />
+							<p>扫码关注</p>
+							<p>回复"礼物" 更多惊喜！</p>
+						</div>
+					</li>
+					<!--下载app-->
+					<li class="download_app navhover">
+						<span class="iconfont">&#xe61d;</span>
+						<a href="">花礼网app</a>
+						<div class="check_download">
+							<img src="../../img/app_qrcode.jpg" />
+							<p>新人专享100元APP礼包</p>
+						</div>
+					</li>
+				</ul>
+				<!--顶部导航栏左边-->
+				<ul class="top_nav_inner_right">
+					<li>
+						<a href="">你好，请登录</a>
+					</li>
+					<li>
+						<a href="">注册</a>
+					</li>
+					<li>
+						<a href="">订单查询</a>
+					</li>
+					<li class="myself navhover">
+						<a href="">我的花礼</a>
+					</li>
+					<li class="customer navhover">
+						<a href="">客户服务</a>
+						<a href="" class="iconfont">&#xe619;</a>
+						<!--客户服务下拉菜单-->
+						<div class="check_order">
+							<p>在线服务</p>
+							<p>帮助中心</p>
+							<p>售后服务</p>
+							<p>配送范围</p>
+							<p>留言反馈</p>
+						</div>
+					</li>
+					<li class="shoppingcar navhover">
+						<a href="" class="iconfont">&#xe600;</a>
+						<a href="">购物车<span class="spc">(0)</span></a>
+						<a href="" class="iconfont">&#xe619;</a>
+						<!--购物车下拉菜单-->
+						<div class="check_shoppingcar">
+							<p>您的购物车中没有商品，先去选购吧</p>
+						</div>
+					</li>
+					<li>中国鲜花礼品网:中国鲜花网领先品牌</li>
+				</ul>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="nav">
+			<div class="nav_inner">
+				<!--导航栏上-->
+				<div class="nav_inner_top">
+					<div class="left">
+						<a class="logo" href=""></a>
+						<h2></h2>
+					</div>
+					<div class="center">
+						<div class="serach">
+							<input type="text" name="" id="" value="" placeholder="商品关键字" />
+							<button>搜索</button>
+						</div>
+						<div class="serach_bottom">
+							<a href="">红玫瑰</a>
+							<a href="">永生花</a>
+							<a href="">生日鲜花</a>
+							<a href="">礼品卡</a>
+						</div>
+					</div>
+					<div class="right">
+						<b>400-889-8188</b>
+						<a href="">在线客服</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--主体部分-->
+		<div class="main">
+			<div class="main_inner">
+				<div class="loginbox">
+					<ul class="login_list">
+						<li class="first">
+							<b class="login_btn select_btn">登录</b>
+							<b class="register_btn">注册</b>
+							<span class="select_line"></span>
+						</li>
+					</ul>
+					<!--正常登录-->
+					<div class="login_contant">
+						<p class="usephone"><a>使用手机验证码登录</a></p>
+						<div>
+							<div class="logincheck"></div>
+							<span class="userimg"></span><input class="login_username" type="text" name="" id="" value="" placeholder="E-mail地址/手机号"/>
+						</div>
+						<div>
+							<span class="passimg"></span><input class="login_userpass" type="password" name="" id="" value="" placeholder="用户密码"/>
+						</div>
+						<p class="forget"><a href="">忘记密码</a></p>
+						<button class="login_button">登录</button>
+						<p class="other">
+							<a href="">微信</a>
+							<i></i>
+							<a href="">QQ</a>
+							<i></i>
+							<a href="">支付宝</a>
+						</p>
+					</div>
+					<!--手机登录-->
+					<div class="phonelogin_contant">
+						<p class="useemail"><a>使用账号密码登录</a></p>
+						<div>
+							<div class="logincheck"></div>
+							<span class="userimg"></span><input class="check_userphone" type="text" name="" id="" value="" placeholder="手机号"/>
+						</div>
+						<div>
+							<span class="passimg"></span>
+							<input class="check_num" type="password" name="" id="" value="" placeholder="验证码"/>
+							<button class="get_num">获取验证码</button>
+						</div>
+						<p class="forget"><a href=""></a></p>
+						<button class="login_button">登录</button>
+						<p class="other">
+							<a href="">微信</a>
+							<i></i>
+							<a href="">QQ</a>
+							<i></i>
+							<a href="">支付宝</a>
+						</p>
+					</div>
+					<!--正常注册-->
+					<div class="register_contant">
+						<p class="usephonr_reg"><a>使用手机号码注册</a></p>
+						<div class="logincheck"></div>
+						<input class="useremail" type="text" name="" id="" value="" placeholder="请填写您的Email地址"/>
+						<input class="userpass" type="password" name="" id="" value="" placeholder="密码"/>
+						<input class="con_userpass" type="password" name="" id="" value="" placeholder="再次输入密码"/>
+						<input class="identifytext" type="text" name="" id="" value="" placeholder="验证码"/>
+						<span class="identify"></span>
+						<a class="change">看不清,换一张</a>
+						<button class="register_button">立即注册</button>
+					</div>
+					<!--手机注册-->
+					<div class="phoneregister_contant">
+						<p class="useemail_reg"><a>使用邮箱注册</a></p>
+						<div class="logincheck"></div>
+						<input class="phonenum" type="text" name="" id="" value="" placeholder="请填写您手机号"/>
+						<input class="userpass" type="password" name="" id="" value="" placeholder="密码"/>
+						<input class="identifytext" type="text" name="" id="" value="" placeholder="验证码"/>
+						<span class="identify"></span>
+						<a class="change">看不清,换一张</a>
+						<div style="clear: both;">
+							
+						</div>
+						<div>
+							<input class="messageident" type="password" name="" id="" value="" placeholder="短信验证码"/>
+							<button class="get_num">获取验证码</button>
+						</div>
+						<button class="register_button">立即注册</button>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!--尾部导航-->		
+		<div class="footer_nav">
+			<div class="footer_nav_inner">
+				<ul>
+					<li>
+						<a href="../../index/html/index.html">首页</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">媒体报道</a>
+					</li>
+					<li>
+						<a href="">联系方式</a>
+					</li>
+					<li>
+						<a href="">企业团购</a>
+					</li>
+					<li>
+						<a href="">友情链接</a>
+					</li>
+					<li>
+						<a href="">在线补款</a>
+					</li>
+					<li>
+						<a href="">为什么选择中国鲜花礼品网</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--网站信息-->		
+		<div class="auth">
+			<div class="auth_inner">
+				<div class="auth_inner_img">
+					<img src="../../img/cxwz.png" />
+					<img src="../../img/cxwz_01.gif" />
+					<img src="../../img/smyz.gif" />
+					<img src="../../img/slogan_01.png" />
+					<img src="../../img/zfb.gif" />
+					<img src="../../img/100.jpg" />
+					<img src="../../img/bico1.jpg" />
+					<img src="../../img/bico2.jpg" />
+					<img src="../../img/bico3.jpg" />
+				</div>
+				<div class="auth_bottom">
+					<p>
+						<a href="">中国花卉协会会员</a>
+						<a href="">中国电子商务协会会员</a>
+						<span>ICP经营许可证：<a href="">粤B2-20050744</a></span>
+						<a href="">粤ICP备09171662号 </a>
+						<span><img src="../../img/beian.png"/>粤公网安备44030502000373号 Copyright © 2005-2017</span>
+					</p>
+					<p>www.hua.com 深圳市百易信息技术有限公司</p>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>

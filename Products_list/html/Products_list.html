@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../index/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../index/css/iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Products_list.css" />
+		<script src="../../index/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../index/js/js.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../index/js/js.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Onload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Hover.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Carousel.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Backtop.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Addshop.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--顶部导航栏-->
+		<div class="top_nav">
+			<div class="top_nav_inner">
+				<!--顶部导航栏左边-->
+				<ul class="top_nav_inner_left">
+					<li>
+						<span class="iconfont">&#xe607;</span>
+						<a href="">收藏鲜花网</a>
+					</li>
+					<!--关注微信-->
+					<li class="focus_wechat navhover">
+						<span class="iconfont">&#xe603;</span>
+						<a href="">关注微信</a>
+						<div class="check_wechat">
+							<img src="../../img/app_qrcode.jpg" />
+							<p>扫码关注</p>
+							<p>回复"礼物" 更多惊喜！</p>
+						</div>
+					</li>
+					<!--下载app-->
+					<li class="download_app navhover">
+						<span class="iconfont">&#xe61d;</span>
+						<a href="">花礼网app</a>
+						<div class="check_download">
+							<img src="../../img/app_qrcode.jpg" />
+							<p>新人专享100元APP礼包</p>
+						</div>
+					</li>
+				</ul>
+				<!--顶部导航栏左边-->
+				<ul class="top_nav_inner_right">
+					<li>
+						<a onclick="location.href='../../Login/html/login.html'">你好，请登录</a>
+					</li>
+					<li>
+						<a href="">注册</a>
+					</li>
+					<li>
+						<a href="">订单查询</a>
+					</li>
+					<li class="myself navhover">
+						<a href="">我的花礼</a>
+					</li>
+					<li class="customer navhover">
+						<a href="">客户服务</a>
+						<a href="" class="iconfont">&#xe619;</a>
+						<!--客户服务下拉菜单-->
+						<div class="check_order">
+							<p>在线服务</p>
+							<p>帮助中心</p>
+							<p>售后服务</p>
+							<p>配送范围</p>
+							<p>留言反馈</p>
+						</div>
+					</li>
+					<li class="shoppingcar navhover" onclick="location.href='../../Shopping/html/Shopping.html'">
+						<a href="" class="iconfont">&#xe600;</a>
+						<a href="">购物车<span class="spc">(0)</span></a>
+						<a href="" class="iconfont">&#xe619;</a>
+						<!--购物车下拉菜单-->
+						<div class="check_shoppingcar">
+							<p>您的购物车中没有商品，先去选购吧</p>
+						</div>
+					</li>
+					<li>中国鲜花礼品网:中国鲜花网领先品牌</li>
+				</ul>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="nav">
+			<div class="nav_inner">
+				<!--导航栏上-->
+				<div class="nav_inner_top">
+					<div class="left">
+						<a class="logo" href=""></a>
+						<h2></h2>
+					</div>
+					<div class="center">
+						<div class="serach">
+							<input type="text" name="" id="" value="" placeholder="商品关键字" />
+							<button>搜索</button>
+						</div>
+						<div class="serach_bottom">
+							<a href="">红玫瑰</a>
+							<a href="">永生花</a>
+							<a href="">生日鲜花</a>
+							<a href="">礼品卡</a>
+						</div>
+					</div>
+					<div class="right">
+						<b>400-889-8188</b>
+						<a href="">在线客服</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航栏下-->
+		<div class="nav_bottom">
+			<div class="nav_inner_bottom">
+				<ul class="nav_list">
+					<li onclick="location.href = '../../index/html/index.html'">首页</li>
+					<li>鲜花</li>
+					<li>永生花</li>
+					<li>蛋糕</li>
+					<li>礼品</li>
+					<li>巧克力</li>
+					<li>花语大全</li>
+					<li>双子座鲜花礼物</li>
+				</ul>
+				<ul class="products_list">
+					<li id="guide" class="guide">全部商品导购</li>
+					<div id="guide_list" class="guide_list">
+						<dl class="products_menu flower_user">
+							<dt>鲜花用途</dt>
+							<dd>
+								<a href="">爱情鲜花</a>
+								<a href="">友情鲜花</a>
+								<a href="">生日鲜花</a>
+							</dd>
+							<dd>
+								<a href="">问候长辈</a>
+								<a href="">探病慰问</a>
+								<a href="">道歉鲜花</a>
+							</dd>
+							<dd>
+								<a href="">祝贺鲜花</a>
+								<a href="">婚庆鲜花</a>
+								<a href="">商务鲜花</a>
+							</dd>
+						</dl>
+						<dl class="fover_flower products_menu">
+							<dt>永生花</dt>
+							<dd>
+								<a href="">经典花盒</a>
+								<a href="">巨型玫瑰</a>
+								<a href="">薰衣草</a>
+							</dd>
+							<dd>
+								<a href="">永生花瓶</a>
+								<a href="">特色永生花</a>
+							</dd>
+						</dl>
+						<dl class="cake products_menu">
+							<dt>蛋糕</dt>
+							<dd>
+								<a href="">元祖</a>
+								<a href="">好利来</a>
+								<a href="">INCAKE</a>
+								<a href="">幸福西饼</a>
+							</dd>
+							<dd>
+								<a href="">诺心</a>
+								<a href="">窝夫小子</a>
+								<a href="">Mcake</a>
+								<a href="">可颂坊</a>
+							</dd>
+							<dd>
+								<a href="">米卡密码</a>
+								<a href="">Vcake</a>
+								<a href="">一品轩</a>
+							</dd>
+							<dd>
+								<a href="">美滋美客</a>
+								<a href="">贝思客</a>
+								<a href="">BONCAKE</a>
+							</dd>
+							<dd>
+								<a href="">全国品牌</a>
+							</dd>
+						</dl>
+						<dl class="gift products_menu">
+							<dt>礼品/公仔/绿植</dt>
+							<dd>
+								<a href="">泰国保鲜花</a>
+								<a href="">音乐盒</a>
+								<a href="">水晶内雕</a>
+							</dd>
+							<dd>
+								<a href="">金箔花</a>
+								<a href="">化妆镜</a>
+								<a href="">香薰系列</a>
+							</dd>
+							<dd>
+								<a href="">音乐睡枕</a>
+								<a href="">花瓶/相框</a>
+								<a href="">镀金玫瑰</a>
+							</dd>
+							<dd>
+								<a href="">LED蜡烛</a>
+								<a href="">卡通花束</a>
+								<a href="">品牌公仔</a>
+							</dd>
+							<dd>
+								<a href="">智能音箱</a>
+								<a href="">首饰</a>
+								<a href="">手工巧克力</a>
+							</dd>
+							<dd>
+								<a href="">进口巧克力</a>
+								<a href="">巧蔻巧克力</a>
+							</dd>
+							<dd>
+								<a href="">瑞士莲巧克力</a>
+								<a href="">创意礼品</a>
+								<a href="">礼品卡</a>
+							</dd>
+							<dd>
+								<a href="">多肉植物盆栽</a>
+								<a href="">茗茶</a>
+							</dd>
+						</dl>
+						<dl class="plant products_menu">
+							<dt>绿色植物</dt>
+							<dd>
+								<a href="">绿色植物</a>
+								<a href="">盆栽花卉</a>
+							</dd>
+						</dl>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<!--主体内容-->
+		<div class="main">
+			<div class="main_inner">
+				<div class="main_inner_left">
+					<ul class="main_left_pro_list">
+						<li class="lia">
+							<div class="left">
+								<span class="typecon"></span>
+								<p>类别</p>
+							</div>
+							<div class="right">
+								<a href="">泰国保鲜花</a>
+								<a href="">音乐盒/水晶球/旋转木马</a>
+								<a href="">3D水晶内雕</a>
+								<a href="">金箔花/金箔玫瑰</a>
+								<a href="">品牌巧克力</a>
+								<a href="">化妆镜</a>
+								<a href="">首饰/饰品</a>
+								<a href="">英国Tangle Teezer梳子</a>
+								<a href="">Giftstalk精选</a>
+								<a href="">Kingking香薰系列</a>
+								<a href="">音乐睡枕</a>
+								<a href="">品牌公仔/Hello Kitty</a>
+								<a href="">多肉植物盆栽</a>
+								<a href="">创意礼品</a>
+								<a href="" class="more">+更多</a>
+							</div>
+						</li>
+						<li class="lia">
+							<div class="left">
+								<span class="usercon"></span>
+								<p>用途</p>
+							</div>
+							<div class="right">
+								<a href="">生日礼品</a>
+								<a href="">约会/求爱礼品</a>
+								<a href="">结婚礼品</a>
+								<a href="">感谢/祝福礼品</a>
+								<a href="">拜访/探望礼品</a>
+								<a href="">结婚纪念日礼品</a>
+								<a href="">乔迁礼品</a>
+								<a href="">家居礼品</a>
+							</div>
+						</li>
+						<li class="lia">
+							<div class="left">
+								<span class="objcon"></span>
+								<p>对象</p>
+							</div>
+							<div class="right">
+								<a href="">送恋人妻子礼物</a>
+								<a href="">送朋友同事礼物</a>
+								<a href="">送客户礼物</a>
+								<a href="">送老师礼物</a>
+								<a href="">送小孩礼物</a>
+								<a href="">送领导礼物</a>
+								<a href="">送父母长辈礼物</a>
+							</div>
+						</li>
+						<li class="lia">
+							<div class="left">
+								<span class="pricecon"></span>
+								<p>价格</p>
+							</div>
+							<div class="right">
+								<a href="">80元以下</a>
+								<a href="">80-150元</a>
+								<a href="">150-300元</a>
+								<a href="">300-500元</a>
+								<a href="">500元以上</a>
+							</div>
+						</li>
+					</ul>
+					<p class="hotsell">热销巧克力推荐</p>
+					<ul class="main_left_hot_list">
+						<li class="lib">
+							<img src="../../img/hotsell_01.jpg"/>
+							<a href="">巧克力推荐/Laderach 思念TA礼盒-巧克力礼盒8颗装，纯正瑞士进口手</a>
+							<span>￥218</span>
+						</li>
+						<li class="lib">
+							<img src="../../img/hotsell_02.jpg"/>
+							<a href="">巧克力推荐/巧克巧蔻定制心形巧克力礼盒-创意手工巧克力</a>
+							<span>￥298</span>
+						</li>
+						<li class="lib">
+							<img src="../../img/hotsell_03.jpg"/>
+							<a href="">巧克力推荐/Laderach 珍惜Ta-夹心巧克力，纯正瑞士手工巧克力</a>
+							<span>￥278</span>
+						</li>
+						<li class="lib">
+							<img src="../../img/htosell_04.jpg"/>
+							<a href="">巧克力推荐/花漾年华巧克力礼盒大礼包-夹心巧克力</a>
+							<span>￥128</span>
+						</li>
+						<li class="lib">
+							<img src="../../img/hotsell_05.jpg"/>
+							<a href="">巧克力推荐/奢悦之美巧克力礼盒-夹心巧克力</a>
+							<span>￥158</span>
+						</li>
+					</ul>
+				</div>
+				<div class="main_inner_right">
+					<!--轮播-->	
+					<div class="banner">
+						<ul class="banner_list">
+							<li class="banner_04"></li>
+							<li class="banner_05"></li>
+							<li class="banner_06"></li>
+							<button class="left"></button>
+							<button class="right"></button>
+							<ul class="select_point">
+								<p class="choice"></p>
+								<p></p>
+								<p></p>
+							</ul>
+						</ul>
+					</div>
+					<!--商品列1-->
+					<div class="ck_list">
+						<p class="title">
+							<span>进口巧克力-瑞士Laderach</span>
+							<a onclick="location.href = '../../Products_list_sort/html/Products_list.html'">更多进口巧克力 &gt;&gt;</a>
+						</p>
+						<div class="ck_contane">
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_01.jpg"/>
+								<p class="price">￥<span class="orderid">218</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/Laderach 思念TA礼盒-巧克力礼盒8</span><span>原产地瑞士进口</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_02.jpg"/>
+								<p class="price">￥<span class="orderid">232</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/laderach 黑巧薄片-夹心巧克力，</span><span>原产地瑞士进口</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_03.jpg"/>
+								<p class="price">￥<span class="orderid">272</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/Laderach 珍惜Ta-夹心巧克力，纯</span><span>原产地瑞士进口</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_04.jpg"/>
+								<p class="price">￥<span class="orderid">174</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/Laderach 爱慕TA礼盒-瑞士进口巧</span><span>原产地瑞士进口</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_05.jpg"/>
+								<p class="price">￥<span class="orderid">380</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/laderach 巧克力礼盒 白色礼盒装 </span><span>原产地瑞士进口</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_06.jpg"/>
+								<p class="price">￥<span class="orderid">270</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/laderach 巧克力礼盒 咖色礼盒装 </span><span>原产地瑞士进口</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_07.jpg"/>
+								<p class="price">￥<span class="orderid">253</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/Laderach 特别款礼盒-夹心巧克力</span><span>原产地瑞士进口</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_08.jpg"/>
+								<p class="price">￥<span class="orderid">302</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/Laderach love TA 礼盒-夹心巧克</span><span>原产地瑞士进口</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+						</div>
+					</div>
+					<!--商品列2-->
+					<div class="ck_list">
+						<p class="title">
+							<span>手工巧克力-巧罗巧克力</span>
+							<a href="">更多进口巧克力 &gt;&gt;</a>
+						</p>
+						<div class="ck_contane">
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_sg_01.jpg"/>
+								<p class="price">￥<span class="orderid">150</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/奢悦之美巧克力礼盒-夹心巧克力</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_sg_02.jpg"/>
+								<p class="price">￥<span class="orderid">122</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/花漾年华巧克力礼盒大礼包-夹心巧</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_sg_03.jpg"/>
+								<p class="price">￥<span class="orderid">76</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/美满良缘 巧克力礼盒-手工巧克力</span><span>新款上线，限量抢购
+</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_sg_04.jpg"/>
+								<p class="price">￥<span class="orderid">116</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/棒棒糖形手工纯脂巧克力礼盒-混合</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_sg_05.jpg"/>
+								<p class="price">￥<span class="orderid">135</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/玫瑰之恋巧克力礼盒-混合口味巧克</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_sg_06.jpg"/>
+								<p class="price">￥<span class="orderid">86</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/玫瑰馨语巧克力礼盒10颗礼盒装- </span><span>新款上线，限量抢购</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_sg_07.jpg"/>
+								<p class="price">￥<span class="orderid">115</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/钻石形巧克力礼盒-手工巧克力</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_sg_08.jpg"/>
+								<p class="price">￥<span class="orderid">85</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/幻梦唯爱轻手工巧克力礼盒-手工巧</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+						</div>
+					</div>
+					<!--商品列3-->
+					<div class="ck_list">
+						<p class="title">
+							<span>巧蔻巧克力</span>
+							<a href="">更多进口巧克力 &gt;&gt;</a>
+						</p>
+						<div class="ck_contane">
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_qk_01.jpg"/>
+								<p class="price">￥<span class="orderid">253</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/巧克巧蔻定制16粒装手工夹心巧克</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_qk_02.jpg"/>
+								<p class="price">￥<span class="orderid">292</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/巧克巧蔻定制心形巧克力礼盒-创意</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_qk_03.jpg"/>
+								<p class="price">￥<span class="orderid">175</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/巧克巧蔻十二星座play系列礼盒-创</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_qk_04.jpg"/>
+								<p class="price">￥<span class="orderid">132</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/巧克巧蔻嫁给我play系列礼盒-创意</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_qk_05.jpg"/>
+								<p class="price">￥<span class="orderid">156</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/巧克巧蔻情人节play系列礼盒-创意</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_qk_06.jpg"/>
+								<p class="price">￥<span class="orderid">292</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/巧克巧蔻3D卡通动物巧克力礼盒-创</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_qk_07.jpg"/>
+								<p class="price">￥<span class="orderid">145</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/巧克巧蔻定制9粒装手工夹心巧克力</span><span>	</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_qk_08.jpg"/>
+								<p class="price">￥<span class="orderid">96</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/巧克巧蔻96%纯可可脂黑巧克力薄</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+						</div>
+					</div>
+					<!--商品列4-->
+					<div class="ck_list">
+						<p class="title">
+							<span>进口巧克力-瑞士莲巧克力</span>
+							<a href="">更多进口巧克力 &gt;&gt;</a>
+						</p>
+						<div class="ck_contane">
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_rsl_01.jpg"/>
+								<p class="price">￥<span class="orderid">109</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/Lindt瑞士莲进口lindor软心巧克力3</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_rsl_02.jpg"/>
+								<p class="price">￥<span class="orderid">109</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/Lindt瑞士莲进口lindor软心牛奶巧</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_rsl_03.jpg"/>
+								<p class="price">￥<span class="orderid">109</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/Lindt瑞士莲进口lindor软心白巧克</span><span></span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_rsl_04.jpg"/>
+								<p class="price">￥<span class="orderid">292</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/Lindt瑞士莲精选巧克力宝蓝+炫银</span><span>原产地瑞士进口</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+							<div class="ck_pro">
+								<img src="../../img/ck_pro_rsl_05.jpg"/>
+								<p class="price">￥<span class="orderid">175</span></p>
+								<a class="name" href=""><span class="pro_num">礼品/Lindt瑞士莲特醇排装黑巧克力4块</span><span>原产地法国进口</span></a><br />
+								<a href="" class="favorite"><span></span>收藏</a>
+								<a class="add_shop"><span></span>加入购物车</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--知识点-->
+		<div class="knowledge">
+			<div class="knowledge_inner">
+				<p class="title">巧克力礼品&送礼常识</p>
+				<div>
+					<ul>
+						<li>情人节送花和巧克力代表什么？</li>
+						<li>情人节巧克力的甜蜜传说</li>
+						<li>情绪低落时，一大束花比吃巧克力管用！</li>
+						<li>异地恋必须知道的5个技巧</li>
+						<li>送女孩子什么礼物好？泰国保鲜花推荐</li>
+					</ul>
+					<ul>
+						<li>情人节送花和巧克力代表什么？</li>
+						<li>情人节巧克力的甜蜜传说</li>
+						<li>情绪低落时，一大束花比吃巧克力管用！</li>
+						<li>异地恋必须知道的5个技巧</li>
+						<li>送女孩子什么礼物好？泰国保鲜花推荐</li>
+					</ul>
+					<ul>
+						<li>情人节送花和巧克力代表什么？</li>
+						<li>情人节巧克力的甜蜜传说</li>
+						<li>情绪低落时，一大束花比吃巧克力管用！</li>
+						<li>异地恋必须知道的5个技巧</li>
+						<li>送女孩子什么礼物好？泰国保鲜花推荐</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--尾部导航-->		
+		<div class="footer_nav">
+			<div class="footer_nav_inner">
+				<ul>
+					<li>
+						<a href="../../index/html/index.html">首页</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">媒体报道</a>
+					</li>
+					<li>
+						<a href="">联系方式</a>
+					</li>
+					<li>
+						<a href="">企业团购</a>
+					</li>
+					<li>
+						<a href="">友情链接</a>
+					</li>
+					<li>
+						<a href="">在线补款</a>
+					</li>
+					<li>
+						<a href="">为什么选择中国鲜花礼品网</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--网站信息-->		
+		<div class="auth">
+			<div class="auth_inner">
+				<div class="auth_inner_img">
+					<img src="../../img/cxwz.png" />
+					<img src="../../img/cxwz_01.gif" />
+					<img src="../../img/smyz.gif" />
+					<img src="../../img/slogan_01.png" />
+					<img src="../../img/zfb.gif" />
+					<img src="../../img/100.jpg" />
+					<img src="../../img/bico1.jpg" />
+					<img src="../../img/bico2.jpg" />
+					<img src="../../img/bico3.jpg" />
+				</div>
+				<div class="auth_bottom">
+					<p>
+						<a href="">中国花卉协会会员</a>
+						<a href="">中国电子商务协会会员</a>
+						<span>ICP经营许可证：<a href="">粤B2-20050744</a></span>
+						<a href="">粤ICP备09171662号 </a>
+						<span><img src="../../img/beian.png"/>粤公网安备44030502000373号 Copyright © 2005-2017</span>
+					</p>
+					<p>花礼网 （中国鲜花礼品网） www.hua.com 深圳市百易信息技术有限公司 中国领先礼品网品牌,专业礼品速递服务！</p>
+				</div>
+			</div>
+		</div>
+		<!--侧栏-->
+		<div class="right_imessage">
+			<span class="user" onclick="location.href='../../Login/html/login.html'"></span>
+			<div class="shopping_nav" onclick="location.href='../../Shopping/html/Shopping.html'">
+				<i class="shopping"></i>
+				<p>购物车</p>
+				<b class="num npc">0</b>
+			</div>
+			<span class="favorite"></span>
+			<span class="history"></span>
+			<span class="phone"></span>
+			<span class="person_servor"></span>
+			<span class="qrcode_right"></span>
+			<span class="advice"></span>
+			<span class="backtop"></span>
+		</div>
+	</body>
+
+</html>

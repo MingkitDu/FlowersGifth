@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../index/css/iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../../index/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/Products_details.css"/>
+		<script src="../../index/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../index/js/js.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Carousel.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Onload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Bigglass.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Selectlist.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Topstop.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Carousela.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--顶部导航栏-->
+		<div class="top_nav">
+			<div class="top_nav_inner">
+				<!--顶部导航栏左边-->
+				<ul class="top_nav_inner_left">
+					<li>
+						<span class="iconfont">&#xe607;</span>
+						<a href="">收藏鲜花网</a>
+					</li>
+					<!--关注微信-->
+					<li class="focus_wechat navhover">
+						<span class="iconfont">&#xe603;</span>
+						<a href="">关注微信</a>
+						<div class="check_wechat">
+							<img src="../../img/app_qrcode.jpg" />
+							<p>扫码关注</p>
+							<p>回复"礼物" 更多惊喜！</p>
+						</div>
+					</li>
+					<!--下载app-->
+					<li class="download_app navhover">
+						<span class="iconfont">&#xe61d;</span>
+						<a href="">花礼网app</a>
+						<div class="check_download">
+							<img src="../../img/app_qrcode.jpg" />
+							<p>新人专享100元APP礼包</p>
+						</div>
+					</li>
+				</ul>
+				<!--顶部导航栏左边-->
+				<ul class="top_nav_inner_right">
+					<li>
+						<a onclick="location.href='../../Login/html/login.html'">你好，请登录</a>
+					</li>
+					<li>
+						<a href="">注册</a>
+					</li>
+					<li>
+						<a href="">订单查询</a>
+					</li>
+					<li class="myself navhover">
+						<a href="">我的花礼</a>
+					</li>
+					<li class="customer navhover">
+						<a href="">客户服务</a>
+						<a href="" class="iconfont">&#xe619;</a>
+						<!--客户服务下拉菜单-->
+						<div class="check_order">
+							<p>在线服务</p>
+							<p>帮助中心</p>
+							<p>售后服务</p>
+							<p>配送范围</p>
+							<p>留言反馈</p>
+						</div>
+					</li>
+					<li class="shoppingcar navhover" onclick="location.href='../../Shopping/html/Shopping.html'">
+						<a href="" class="iconfont">&#xe600;</a>
+						<a>购物车<span class="spc">(0)</span></a>
+						<a href="" class="iconfont">&#xe619;</a>
+						<!--购物车下拉菜单-->
+						<div class="check_shoppingcar">
+							<p>您的购物车中没有商品，先去选购吧</p>
+						</div>
+					</li>
+					<li>中国鲜花礼品网:中国鲜花网领先品牌</li>
+				</ul>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="nav">
+			<div class="nav_inner">
+				<!--导航栏上-->
+				<div class="nav_inner_top">
+					<div class="left">
+						<a class="logo" href=""></a>
+						<h2></h2>
+					</div>
+					<div class="center">
+						<div class="serach">
+							<input type="text" name="" id="" value="" placeholder="商品关键字" />
+							<button>搜索</button>
+						</div>
+						<div class="serach_bottom">
+							<a href="">红玫瑰</a>
+							<a href="">永生花</a>
+							<a href="">生日鲜花</a>
+							<a href="">礼品卡</a>
+						</div>
+					</div>
+					<div class="right">
+						<b>400-889-8188</b>
+						<a href="">在线客服</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航栏下-->
+		<div class="nav_bottom">
+			<div class="nav_inner_bottom">
+				<ul class="nav_list">
+					<li onclick="location.href = '../../index/html/index.html'">首页</li>
+					<li>鲜花</li>
+					<li>永生花</li>
+					<li>蛋糕</li>
+					<li>礼品</li>
+					<li onclick="location.href='../../Products_list/html/Products_list.html'">巧克力</li>
+					<li>花语大全</li>
+					<li>双子座鲜花礼物</li>
+				</ul>
+				<ul class="products_list">
+					<li id="guide" class="guide">全部商品导购</li>
+					<div id="guide_list" class="guide_list">
+						<dl class="products_menu flower_user">
+							<dt>鲜花用途</dt>
+							<dd>
+								<a href="">爱情鲜花</a>
+								<a href="">友情鲜花</a>
+								<a href="">生日鲜花</a>
+							</dd>
+							<dd>
+								<a href="">问候长辈</a>
+								<a href="">探病慰问</a>
+								<a href="">道歉鲜花</a>
+							</dd>
+							<dd>
+								<a href="">祝贺鲜花</a>
+								<a href="">婚庆鲜花</a>
+								<a href="">商务鲜花</a>
+							</dd>
+						</dl>
+						<dl class="fover_flower products_menu">
+							<dt>永生花</dt>
+							<dd>
+								<a href="">经典花盒</a>
+								<a href="">巨型玫瑰</a>
+								<a href="">薰衣草</a>
+							</dd>
+							<dd>
+								<a href="">永生花瓶</a>
+								<a href="">特色永生花</a>
+							</dd>
+						</dl>
+						<dl class="cake products_menu">
+							<dt>蛋糕</dt>
+							<dd>
+								<a href="">元祖</a>
+								<a href="">好利来</a>
+								<a href="">INCAKE</a>
+								<a href="">幸福西饼</a>
+							</dd>
+							<dd>
+								<a href="">诺心</a>
+								<a href="">窝夫小子</a>
+								<a href="">Mcake</a>
+								<a href="">可颂坊</a>
+							</dd>
+							<dd>
+								<a href="">米卡密码</a>
+								<a href="">Vcake</a>
+								<a href="">一品轩</a>
+							</dd>
+							<dd>
+								<a href="">美滋美客</a>
+								<a href="">贝思客</a>
+								<a href="">BONCAKE</a>
+							</dd>
+							<dd>
+								<a href="">全国品牌</a>
+							</dd>
+						</dl>
+						<dl class="gift products_menu">
+							<dt>礼品/公仔/绿植</dt>
+							<dd>
+								<a href="">泰国保鲜花</a>
+								<a href="">音乐盒</a>
+								<a href="">水晶内雕</a>
+							</dd>
+							<dd>
+								<a href="">金箔花</a>
+								<a href="">化妆镜</a>
+								<a href="">香薰系列</a>
+							</dd>
+							<dd>
+								<a href="">音乐睡枕</a>
+								<a href="">花瓶/相框</a>
+								<a href="">镀金玫瑰</a>
+							</dd>
+							<dd>
+								<a href="">LED蜡烛</a>
+								<a href="">卡通花束</a>
+								<a href="">品牌公仔</a>
+							</dd>
+							<dd>
+								<a href="">智能音箱</a>
+								<a href="">首饰</a>
+								<a href="">手工巧克力</a>
+							</dd>
+							<dd>
+								<a href="">进口巧克力</a>
+								<a href="">巧蔻巧克力</a>
+							</dd>
+							<dd>
+								<a href="">瑞士莲巧克力</a>
+								<a href="">创意礼品</a>
+								<a href="">礼品卡</a>
+							</dd>
+							<dd>
+								<a href="">多肉植物盆栽</a>
+								<a href="">茗茶</a>
+							</dd>
+						</dl>
+						<dl class="plant products_menu">
+							<dt>绿色植物</dt>
+							<dd>
+								<a href="">绿色植物</a>
+								<a href="">盆栽花卉</a>
+							</dd>
+						</dl>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<!--小路径-->
+		<div class="little_path">
+			<div class="little_path_inner">
+				<a onclick="location.href='../../index/html/index.html'">首页</a> &gt; <a onclick="location.href='../../Products_list/html/Products_list.html'">品牌巧克力</a> &gt; <a onclick="location.href='../../Products_list_sort/html/Products_list.html'">进口巧克力</a> &gt;  Laderach 思念TA礼盒
+			</div>
+		</div>
+		<!--商品信息-->
+		<div class="products_datails">
+			<div class="products_datails_inner">
+				<div class="main_top">
+					<div class="products_datails_inner_l">
+						<div class="banner">
+							<ul class="banner_list">
+								<div class="ori">
+									<div class="small">
+									
+									</div>
+									<div class="move">
+						
+									</div>
+								</div>
+								<div class="big">
+								
+								</div>
+								<li class="products_dbig_01"></li>
+								<li class="products_dbig_02"></li>
+								<li class="products_dbig_03"></li>
+								<li class="products_dbig_04"></li>
+								
+								<button class="left"></button>
+								<button class="right"></button>
+								<ul class="select_point">
+									<p><img src="../../img/product_dsmall_01.jpg"/></p>
+									<p><img src="../../img/product_dsmall_02.jpg"/></p>
+									<p><img src="../../img/product_dsmall_03.jpg"/></p>
+									<p><img src="../../img/product_dsmall_04.jpg"/></p>
+								</ul>
+							</ul>
+						</div>
+					</div>
+					<div class="products_datails_inner_r">
+						<div class="title">
+							<b>Laderach 思念TA礼盒----巧克力礼盒8颗装，纯正瑞士进口手工巧克力</b>
+							<p>原产地瑞士进口</p>
+						</div>
+						<div class="concent">
+							<dl>
+								<dt>类 别：</dt>
+								<dd>礼品-进口巧克力 编 号：1204009</dd>
+							</dl>
+							<dl>
+								<dt>材 料：</dt>
+								<dd>Laderach瑞士进口巧克力礼盒8颗装</dd>
+							</dl>
+							<dl>
+								<dt>包 装：</dt>
+								<dd>礼盒装</dd>
+							</dl>
+							<dl>
+								<dt>备 注：</dt>
+								<dd>
+									品牌: 莱德瑞Laderach<br />
+									配料表：可可油,可可酱,榛子,开心果,扁桃仁,白砂糖,全脂奶粉,脱脂奶粉等<br />
+									储藏方法：15-18摄氏度的阴凉干燥环境<br />
+									保质期：270 天<br />
+									净含量: 80g<br />
+									系列: 8颗雅致礼盒<br />
+									成分含量: 35%<br />
+									巧克力品类: 夹心巧克力<br />
+									产地: 瑞士<br />
+									是否含有代可可脂: 否<br />
+									巧克力制作工艺: 手工
+								</dd>
+							</dl>
+							<dl>
+								<dt>附 送：</dt>
+								<dd>此商品不附送贺卡</dd>
+							</dl>
+							<dl>
+								<dt>配 送：</dt>
+								<dd>顺丰快递上海发货：周一到周日18:00前订单当天发货，超过这个时间第二天发货；</dd>
+							</dl>
+							<dl>
+								<dt>说 明：</dt>
+								<dd style="color: #FF6A00;">巧克力产品不支持7天无理由退货，请谨慎选择！</dd>
+							</dl>
+						</div>
+						<div class="pri">
+							<p>市场价：￥288</p>
+							<p>花礼价：￥<span>218</span></p>
+						</div>
+						<div class="buy">
+							<button><span class="buy_logo"></span>立即购买</button><span class="icon_05"></span><a href="">收藏</a>
+						</div>
+						<div class="share">
+							<p>分享：</p>
+							<button class="first"></button>
+							<button class="qq"></button>
+							<button class="wc"></button>
+							<button class="sina"></button>
+							<button class="tc"></button>
+							<button class="more"><span>更多</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--主体-->
+		<div class="main">
+			<div class="main_inner">
+				<div class="main_inner_left">
+					<div class="history">
+						<p>浏览记录</p>
+						<p>暂无浏览记录！</p>
+					</div>
+					<div class="hot">
+						<p class="hotsell">热销巧克力推荐</p>
+						<ul class="main_left_hot_list">
+							<li class="lib">
+								<img src="../../img/hotsell_01.jpg"/>
+								<a href="">巧克力推荐/Laderach 思念TA礼盒-巧克力礼盒8颗装，纯正瑞士进口手</a>
+								<span>￥218</span>
+							</li>
+							<li class="lib">
+								<img src="../../img/hotsell_02.jpg"/>
+								<a href="">巧克力推荐/巧克巧蔻定制心形巧克力礼盒-创意手工巧克力</a>
+								<span>￥298</span>
+							</li>
+							<li class="lib">
+								<img src="../../img/hotsell_03.jpg"/>
+								<a href="">巧克力推荐/Laderach 珍惜Ta-夹心巧克力，纯正瑞士手工巧克力</a>
+								<span>￥278</span>
+							</li>
+							<li class="lib">
+								<img src="../../img/htosell_04.jpg"/>
+								<a href="">巧克力推荐/花漾年华巧克力礼盒大礼包-夹心巧克力</a>
+								<span>￥128</span>
+							</li>
+							<li class="lib">
+								<img src="../../img/hotsell_05.jpg"/>
+								<a href="">巧克力推荐/奢悦之美巧克力礼盒-夹心巧克力</a>
+								<span>￥158</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="main_inner_right">
+					<ul class="selec_list">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<li class="select">商品详情</li>
+						<li>用户评价</li>
+						<li>常见问题</li>
+						<li>购物保障</li>
+						<p>￥<b>218</b><button>立即购买</button></p>
+					</ul>
+					<!--商品内容-->
+					<div class="pro_mess">
+						<img src="../../img/pro_mess_01.jpg"/>
+						<img src="../../img/pro_mess_02.jpg"/>
+						<img src="../../img/pro_mess_03.jpg"/>
+						<img src="../../img/pro_mess_04.jpg"/>
+						<img src="../../img/pro_mess_05.jpg"/>
+						<img src="../../img/pro_mess_06.jpg"/>
+						<img src="../../img/pro_mess_07.jpg"/>
+						<img src="../../img/pro_mess_08.jpg"/>
+						<img src="../../img/pro_mess_09.jpg"/>
+						<img src="../../img/pro_mess_10.jpg"/>
+						<img src="../../img/pro_mess_11.jpg"/>
+						<img src="../../img/pro_mess_12.jpg"/>
+					</div>
+					<!--评论-->
+					<div class="evaluate">
+						<p style="width: 100%;text-align: center;margin-bottom: 20px;">本商品评价<b style="color: red;">12</b>条，最近所有商品评价<b style="color: red;">212727</b>条</p>
+						<div class="person_eva">
+							<div class="evaluate_l">
+								<dl>
+									<dt><img src="../../img/person_eva.jpg"/></dt>
+									<dd>
+										kit_199* <br />
+										北京市昌平区霍*
+									</dd>
+								</dl>
+							</div>
+							<div class="evaluate_r">
+								<div class="evaluate_rt">
+									<div class="evaluate_rl">
+										<p>整体评分：<span></span> <span></span> <span></span> <span></span> <span></span></p>
+									</div>
+									<div class="evaluate_rr">
+										<p>评价时间：评价时间：2017-05-21 IP：112.97.61.1*</p>
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+								<div class="evaluate_rb">
+									评价内容：也太早到了吧
+								</div>
+							</div>
+						</div>
+						<div class="person_eva">
+							<div class="evaluate_l">
+								<dl>
+									<dt><img src="../../img/person_eva.jpg"/></dt>
+									<dd>
+										jimati* <br />
+										呼兰区学院路师*
+									</dd>
+								</dl>
+							</div>
+							<div class="evaluate_r">
+								<div class="evaluate_rt">
+									<div class="evaluate_rl">
+										<p>整体评分：<span></span> <span></span> <span></span> <span></span> <span></span></p>
+									</div>
+									<div class="evaluate_rr">
+										<p>评价时间：2017-05-14 IP：114.248.50.1*</p>
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+								<div class="evaluate_rb">
+									评价内容：很满意，老人很喜欢，谢谢大家了
+								</div>
+							</div>
+						</div>
+						<div class="person_eva">
+							<div class="evaluate_l">
+								<dl>
+									<dt><img src="../../img/person_eva.jpg"/></dt>
+									<dd>
+										cyw.f61* <br />
+										河南省郑州市高*
+									</dd>
+								</dl>
+							</div>
+							<div class="evaluate_r">
+								<div class="evaluate_rt">
+									<div class="evaluate_rl">
+										<p>整体评分：<span></span> <span></span> <span></span> <span></span> <span></span></p>
+									</div>
+									<div class="evaluate_rr">
+										<p>评价时间：2017-02-16 IP：27.247.172.1*</p>
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+								<div class="evaluate_rb">
+									评价内容：很准時喔
+								</div>
+							</div>
+						</div>
+						<div class="person_eva">
+							<div class="evaluate_l">
+								<dl>
+									<dt><img src="../../img/person_eva.jpg"/></dt>
+									<dd>
+										weixin_* <br />
+										湖北省黄石市大*
+									</dd>
+								</dl>
+							</div>
+							<div class="evaluate_r">
+								<div class="evaluate_rt">
+									<div class="evaluate_rl">
+										<p>整体评分：<span></span> <span></span> <span></span> <span></span> <span></span></p>
+									</div>
+									<div class="evaluate_rr">
+										<p>评价时间：2017-02-16 IP：223.104.6.*</p>
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+								<div class="evaluate_rb">
+									评价内容：很好吃
+								</div>
+							</div>
+						</div>
+						<div class="person_eva">
+							<div class="evaluate_l">
+								<dl>
+									<dt><img src="../../img/person_eva.jpg"/></dt>
+									<dd>
+										qq_1365* <br />
+										北京市海淀区上*
+									</dd>
+								</dl>
+							</div>
+							<div class="evaluate_r">
+								<div class="evaluate_rt">
+									<div class="evaluate_rl">
+										<p>整体评分：<span></span> <span></span> <span></span> <span></span> <span></span></p>
+									</div>
+									<div class="evaluate_rr">
+										<p>评价时间：2016-12-30 IP：60.169.191.2*</p>
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+								<div class="evaluate_rb">
+									评价内容：很不错～小她很喜欢～时间有点提前了，不过不碍事。
+								</div>
+							</div>
+						</div>
+						<div class="person_eva">
+							<div class="evaluate_l">
+								<dl>
+									<dt><img src="../../img/person_eva.jpg"/></dt>
+									<dd>
+										ws03292* <br />
+										世纪大道8号国*
+									</dd>
+								</dl>
+							</div>
+							<div class="evaluate_r">
+								<div class="evaluate_rt">
+									<div class="evaluate_rl">
+										<p>整体评分：<span></span> <span></span> <span></span> <span></span> <span></span></p>
+									</div>
+									<div class="evaluate_rr">
+										<p>评价时间：2016-12-08 IP：220.248.15.*</p>
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+								<div class="evaluate_rb">
+									评价内容：巧克力本身不错 但由于是快递配送晚了一天 希望也能直接配送
+								</div>
+							</div>
+						</div>
+						<p style="width: 100%;text-align: center;margin-bottom: 20px;">本商品评价<b style="color: red;">12</b>条，
+							【<a href="" style="color:red;">查看本商品全部评价</a>】【<a href="" style="color: red;">查看本商品全部评价</a>】</p>
+				</div>
+				<!--常见问题-->
+				<div class="qusetion">
+					<p style="color: red;">常见问题：</p>
+					<dl>
+						<dt>·我怎么订购？</dt>
+						<dd>
+							您在网上提交订单，并按提示支付完款项后，我们即按您要求的时间配送上门。<br />
+							订购流程：选择商品 → 放入购物车 → 提交我的订单 → 会员购买/非会员购买通道选择 → 填写订单信息 → 支付款项 
+							<a href="">订购动画演示&gt;&gt;</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>·我怎么付款？</dt>
+						<dd>可以网上支付、或银行汇款、上门收款。网上支付方式，我们支持国内数十家银行卡网上支付，支持Visa、Master信用卡支付，支持Paypal付款，支持国内主要银行信用卡的无<br />
+							磁无密E-POS支付。如果您的银行卡无法网上支付，建议您银行汇款，温馨提醒您：银行ATM机或自助终端上操作转款方便快捷，无需柜台排队，同行均为实时到帐。上门收款<br />
+							指上门向订购人收取款项后安排配送，限指定城市市区。提交订单成功后，将出现您选择的付款方式的操作指引，提前了解可点击 
+							<a href="">付款方式&gt;&gt;</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>·异地送鲜花/蛋糕可以吗？多久能送到？[具体如：我人在北京，晚上要送花到长沙，可以吗？]</dt>
+						<dd>
+							可以的，我们全国连锁经营，最快3个小时左右可送达全国900多个城市，由当地加盟店当天配送前新鲜制作送出。 当然，您也可以完全放心提前订购，提交订单时可自由选择<br />
+							需配送鲜花/蛋糕的时间，我们将按您的要求安排订单，确保在您指定的日期送达。
+						</dd>
+					</dl>
+					<dl>
+						<dt>·是先付款再配送吗？先付款怎么保证我的东西能按要求送到？</dt>
+						<dd>鲜花商品特殊，需先付款后配送，还请您支持和谅解。我们是经营了多年的品牌服务商，有广泛的行业影响，艾瑞排名行业第一，客户的口碑是我们生命，我们将竭尽所能为您<br />
+							提供最好的产品和服务，同时公司有严格的售后服务条款和承诺，确保客户利益，详见下述售后服务说明。
+						</dd>
+					</dl>
+					<dl>
+						<dt>·送到的蛋糕会和图片上的一样吗？</dt>
+						<dd>糕点师是按照图片和文字的要求来制作蛋糕的，效果基本是一致，但不同糕点师制作手工略有区别，另受当地原料因素等原因影响，当某些材料、颜色及季节性水果缺乏时，我<br />
+							们会以相近的替代，实际收到的蛋糕与网上图片可能存在差异。
+						</dd>
+					</dl>
+					<dl>
+						<dt>关于售后服务：</dt>
+						<dd>·我们一直致力于持续提升服务水平，追求零客诉，我们为客户提供完善的售后服务。如果出现误单、花材不符、贺卡有误或者其他任何您不满意的情况，欢迎您第一时间与我<br />
+							们联系，我们将尽快为您做出回复和处理。200%退赔承诺，即如果漏单未送，订单款项全额退还给您，原订单商品同时再免费配送一次，详见
+							<a href="">售后服务条款&gt;&gt;</a>
+						</dd>
+					</dl>
+				</div>
+				<!--购物保障-->
+				<div class="promise">
+					<ul class="select_point1">
+							<a>
+								<span class="pro_select"></span>
+								十年品牌
+							</a>
+							<a>
+								<span></span>
+								销量第一
+							</a>
+							<a>
+								<span></span>
+								百万客户信赖
+							</a>
+							<a>
+								<span></span>
+								订单实拍
+							</a>
+							<a>
+								<span></span>
+								3小时配送
+							</a>
+							<a>
+								<span></span>
+								200%退赔承诺
+							</a>
+						</ul>
+					<ul class="pro_list">
+						<li class="pro_01"></li>
+						<li class="pro_02"></li>
+						<li class="pro_03"></li>
+						<li class="pro_04"></li>
+						<li class="pro_05"></li>
+						<li class="pro_06"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--尾部导航-->		
+		<div class="footer_nav">
+			<div class="footer_nav_inner">
+				<ul>
+					<li>
+						<a href="../../index/html/index.html">首页</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">媒体报道</a>
+					</li>
+					<li>
+						<a href="">联系方式</a>
+					</li>
+					<li>
+						<a href="">企业团购</a>
+					</li>
+					<li>
+						<a href="">友情链接</a>
+					</li>
+					<li>
+						<a href="">在线补款</a>
+					</li>
+					<li>
+						<a href="">为什么选择中国鲜花礼品网</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--网站信息-->		
+		<div class="auth">
+			<div class="auth_inner">
+				<div class="auth_inner_img">
+					<img src="../../img/cxwz.png" />
+					<img src="../../img/cxwz_01.gif" />
+					<img src="../../img/smyz.gif" />
+					<img src="../../img/slogan_01.png" />
+					<img src="../../img/zfb.gif" />
+					<img src="../../img/100.jpg" />
+					<img src="../../img/bico1.jpg" />
+					<img src="../../img/bico2.jpg" />
+					<img src="../../img/bico3.jpg" />
+				</div>
+				<div class="auth_bottom">
+					<p>
+						<a href="">中国花卉协会会员</a>
+						<a href="">中国电子商务协会会员</a>
+						<span>ICP经营许可证：<a href="">粤B2-20050744</a></span>
+						<a href="">粤ICP备09171662号 </a>
+						<span><img src="../../img/beian.png"/>粤公网安备44030502000373号 Copyright © 2005-2017</span>
+					</p>
+					<p>花礼网 （中国鲜花礼品网） www.hua.com 深圳市百易信息技术有限公司 巧克力专区！</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

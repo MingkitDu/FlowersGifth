@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont/iconfont.css" />
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/js.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Carousel.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Backtop.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Onload.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--顶部广告-->
+		<div class="top_ad"></div>
+		<!--顶部导航栏-->
+		<div class="top_nav">
+			<div class="top_nav_inner">
+				<!--顶部导航栏左边-->
+				<ul class="top_nav_inner_left">
+					<li>
+						<span class="iconfont">&#xe607;</span>
+						<a href="">收藏鲜花网</a>
+					</li>
+					<!--关注微信-->
+					<li class="focus_wechat navhover">
+						<span class="iconfont">&#xe603;</span>
+						<a href="">关注微信</a>
+						<div class="check_wechat">
+							<img src="../../img/app_qrcode.jpg" />
+							<p>扫码关注</p>
+							<p>回复"礼物" 更多惊喜！</p>
+						</div>
+					</li>
+					<!--下载app-->
+					<li class="download_app navhover">
+						<span class="iconfont">&#xe61d;</span>
+						<a href="">花礼网app</a>
+						<div class="check_download">
+							<img src="../../img/app_qrcode.jpg" />
+							<p>新人专享100元APP礼包</p>
+						</div>
+					</li>
+				</ul>
+				<!--顶部导航栏左边-->
+				<ul class="top_nav_inner_right">
+					<li>
+						<a onclick="location.href='../../Login/html/login.html'">你好，请登录</a>
+					</li>
+					<li>
+						<a href="">注册</a>
+					</li>
+					<li>
+						<a href="">订单查询</a>
+					</li>
+					<li class="myself navhover">
+						<a href="">我的花礼</a>
+					</li>
+					<li class="customer navhover">
+						<a href="">客户服务</a>
+						<a href="" class="iconfont">&#xe619;</a>
+						<!--客户服务下拉菜单-->
+						<div class="check_order">
+							<p>在线服务</p>
+							<p>帮助中心</p>
+							<p>售后服务</p>
+							<p>配送范围</p>
+							<p>留言反馈</p>
+						</div>
+					</li>
+					<li class="shoppingcar navhover" onclick="location.href='../../Shopping/html/Shopping.html'">
+						<a href="" class="iconfont">&#xe600;</a>
+						<a>购物车<span class="spc">(0)</span></a>
+						<a href="" class="iconfont">&#xe619;</a>
+						<!--购物车下拉菜单-->
+						<div class="check_shoppingcar">
+							<p>您的购物车中没有商品，先去选购吧</p>
+						</div>
+					</li>
+					<li>中国鲜花礼品网:中国鲜花网领先品牌</li>
+				</ul>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="nav">
+			<div class="nav_inner">
+				<!--导航栏上-->
+				<div class="nav_inner_top">
+					<div class="left">
+						<a class="logo" href=""></a>
+						<h2></h2>
+					</div>
+					<div class="center">
+						<div class="serach">
+							<input type="text" name="" id="" value="" placeholder="商品关键字" />
+							<button>搜索</button>
+						</div>
+						<div class="serach_bottom">
+							<a href="">红玫瑰</a>
+							<a href="">永生花</a>
+							<a href="">生日鲜花</a>
+							<a href="">礼品卡</a>
+						</div>
+					</div>
+					<div class="right">
+						<b>400-889-8188</b>
+						<a href="">在线客服</a>
+					</div>
+				</div>
+				<!--导航栏下-->
+				<div class="nav_inner_bottom">
+					<ul class="products_list">
+						<li class="guide">全部商品导购</li>
+						<dl class="products_menu flower_user">
+							<dt>鲜花用途</dt>
+							<dd>
+								<a href="">爱情鲜花</a>
+								<a href="">友情鲜花</a>
+								<a href="">生日鲜花</a>
+							</dd>
+							<dd>
+								<a href="">问候长辈</a>
+								<a href="">探病慰问</a>
+								<a href="">道歉鲜花</a>
+							</dd>
+							<dd>
+								<a href="">祝贺鲜花</a>
+								<a href="">婚庆鲜花</a>
+								<a href="">商务鲜花</a>
+							</dd>
+						</dl>
+						<dl class="products_menu">
+							<dt>鲜花木材</dt>
+							<dd>
+								<a href="">玫瑰</a>
+								<a href="">康乃馨</a>
+								<a href="">郁金香</a>
+								<a href="">百合</a>
+							</dd>
+							<dd>
+								<a href="">扶郎</a>
+								<a href="">马蹄莲</a>
+								<a href="">向日葵</a>
+							</dd>
+						</dl>
+						<dl class="products_menu">
+							<dt>鲜花类别</dt>
+							<dd>
+								<a href="">花束</a>
+								<a href="">花盒</a>
+								<a href="">瓶花</a>
+								<a href="">精品鲜花</a>
+							</dd>
+							<dd>
+								<a href="">果篮</a>
+								<a href="">桌面花篮</a>
+								<a href="">开业花篮</a>
+							</dd>
+						</dl>
+						<!--永生花类-->
+						<dl class="fover_flower products_menu">
+							<dt>永生花<span class="iconfont">&#xe61e;</span></dt>
+							<dd>
+								<a href="">经典花盒</a>
+								<a href="">巨型玫瑰</a>
+								<a href="">薰衣草</a>
+							</dd>
+							<!--永生花hover-->
+							<div class="fover_flower_menu">
+								<div><span></span>永生花类别</div>
+								<dl class="fover_flower_list first">
+									<img src="../../img/ysh_brand_menu_01.jpg" />
+									<dd>经典花盒</dd>
+								</dl>
+								<dl class="fover_flower_list">
+									<img src="../../img/ysh_brand_menu_02.jpg" />
+									<dd>巨型玫瑰</dd>
+								</dl>
+								<dl class="fover_flower_list">
+									<img src="../../img/ysh_brand_menu_03.jpg" />
+									<dd>薰衣草</dd>
+								</dl>
+								<dl class="fover_flower_list">
+									<img src="../../img/ysh_brand_menu_04.jpg" />
+									<dd>永生花瓶</dd>
+								</dl>
+								<dl class="fover_flower_list">
+									<img src="../../img/ysh_brand_menu_05.jpg" />
+									<dd>特色永生花</dd>
+								</dl>
+							</div>
+						</dl>
+						<dl class="cake products_menu">
+							<div class="cake_menu">
+								<div><span></span>蛋糕品牌</div>
+								<div class="list">
+									<dl class="cake_list first">
+										<img src="../../img/cake_brand_menu_01.jpg" />
+										<dd>元祖</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/cake_brand_menu_02.jpg" />
+										<dd>好利来</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/cake_brand_menu_03.jpg" />
+										<dd>INCAKE</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/cake_brand_menu_04.jpg" />
+										<dd>幸福西饼</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/cake_brand_menu_05.jpg" />
+										<dd>诺心蛋糕</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/cake_brand_menu_06.jpg" />
+										<dd>窝夫小子</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/cake_brand_menu_07.jpg" />
+										<dd>Mcake蛋糕</dd>
+									</dl>
+									<dl class="cake_list first">
+										<img src="../../img/cake_brand_menu_08.jpg" />
+										<dd>可颂坊</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/cake_brand_menu_09.jpg" />
+										<dd>米卡米卡</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/cake_brand_menu_10.jpg" />
+										<dd>Vcake蛋糕</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/cake_brand_menu_11.jpg" />
+										<dd>一品轩</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/cake_brand_menu_12.jpg" />
+										<dd>美滋美客</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/brandcake_beisike.png" />
+										<dd>贝思客</dd>
+									</dl>
+									<dl class="cake_list">
+										<img src="../../img/boncake.png" />
+										<dd>BONCAKE</dd>
+									</dl>
+									<dl class="cake_list first">
+										<dd>全国蛋糕</dd>
+									</dl>
+									<div style="clear: both;"></div>
+								</div>
+								<div><span></span>蛋糕城市</div>
+								<div class="city">
+									<p>
+										<a href="">北京</a>
+										<a href="">上海</a>
+										<a href="">广州</a>
+										<a href="">深圳</a>
+										<a href="">天津</a>
+										<a href="">成都</a>
+										<a href="">重庆</a>
+										<a href="">西安</a>
+										<a href="">苏州</a>
+										<a href="">杭州</a>
+										<a href="">南京</a>
+										<a href="">合肥</a>
+										<a href="">武汉</a>
+										<a href="">郑州</a>
+										<a href="">长沙</a>
+										<a href="">南昌</a>
+										<a href="">哈尔滨</a>
+										<a href="">沈阳</a>
+										<a href="">长春</a>
+									</p>
+									<p>
+										<a href="">大连</a>
+										<a href="">青岛</a>
+										<a href="">济南</a>
+										<a href="">福州</a>
+										<a href="">厦门</a>
+										<a href="">昆明</a>
+										<a href="">贵阳</a>
+										<a href="">南宁</a>
+										<a href="">石家庄</a>
+										<a href="">海口</a>
+										<a href="">太原</a>
+										<a href="">兰州</a>
+										<a href="">乌鲁木齐</a>
+										<a href="">唐山</a>
+										<a href="">呼和浩特</a>
+										<a href="">东莞</a>
+										<a href="">佛山</a>
+										<a href="">宁波</a>
+									</p>
+									<p>
+										<a href="">无锡</a>
+										<a href="">温州</a>
+										<a href="">常州</a>
+										<a href="">更多&gt;&gt;</a>
+									</p>
+								</div>
+							</div>
+							<dt>蛋糕<span class="iconfont">&#xe61e;</span></dt>
+							<dd>
+								<a href="">元祖</a>
+								<a href="">好利来</a>
+								<a href="">可颂坊</a>
+								<a href="">更多</a>
+							</dd>
+						</dl>
+						<dl class="gift products_menu">
+							<div class="gift_menu">
+								<div><span></span>礼品类别</div>
+								<div class="list">
+									<dl class="gift_list first">
+										<img src="../../img/cake_sort_menu_01.jpg" />
+										<dd>保鲜花</dd>
+									</dl>
+									<dl class="gift_list">
+										<img src="../../img/cake_sort_menu_02.jpg" />
+										<dd>金箔花</dd>
+									</dl>
+									<dl class="gift_list">
+										<img src="../../img/cake_sort_menu_03.jpg" />
+										<dd>音乐盒</dd>
+									</dl>
+									<dl class="gift_list">
+										<img src="../../img/cake_sort_menu_4.jpg" />
+										<dd>水晶内雕</dd>
+									</dl>
+									<dl class="gift_list">
+										<img src="../../img/cake_sort_menu_05.jpg" />
+										<dd>化妆镜</dd>
+									</dl>
+									<dl class="gift_list">
+										<img src="../../img/cake_sort_menu_04.jpg" />
+										<dd>音乐睡枕</dd>
+									</dl>
+									<dl class="gift_list">
+										<img src="../../img/cake_sort_menu_06.jpg" />
+										<dd>香薰系列</dd>
+									</dl>
+									<dl class="gift_list first">
+										<img src="../../img/cake_sort_menu_9.jpg" />
+										<dd>花瓶/相框</dd>
+									</dl>
+									<dl class="gift_list">
+										<img src="../../img/cake_sort_menu_7.jpg" />
+										<dd>LED蜡烛</dd>
+									</dl>
+									<dl class="gift_list">
+										<img src="../../img/cake_sort_menu_10.jpg" />
+										<dd>巧克力</dd>
+									</dl>
+									<dl class="gift_list">
+										<img src="../../img/cake_sort_menu_12.jpg" />
+										<dd>首饰</dd>
+									</dl>
+									<dl class="gift_list">
+										<img src="../../img/cake_sort_menu_13.jpg" />
+										<dd>创意礼品</dd>
+									</dl>
+									<dl class="gift_list">
+										<img src="../../img/card.jpg" />
+										<dd>礼品卡</dd>
+									</dl>
+									<div style="clear: both;"></div>
+								</div>
+								<div><span></span>品牌公仔</div>
+								<p>
+									<a href="">Hello Kitty公仔</a>
+									<a href="">韩国Ozland公仔</a>
+									<a href="">doge神烦狗</a>
+									<a href="">卡通花束(公仔花束)</a>
+								</p>
+								<div><span></span>绿色花卉</div>
+								<p>
+									<a href="">绿色植物</a>
+									<a href="">盆栽花卉</a>
+								</p>
+							</div>
+							<dt>礼品/公仔/绿植<span class="iconfont">&#xe61e;</span></dt>
+						</dl>
+					</ul>
+					<ul class="nav_list">
+						<li>鲜花</li>
+						<li>永生花</li>
+						<li>蛋糕</li>
+						<li>礼品</li>
+						<li onclick="location.href = '../../Products_list/html/Products_list.html'">巧克力</li>
+						<li>花语大全</li>
+						<li>企业团购</li>
+						<li>双子座鲜花礼物</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--轮播-->
+		<div id="banner">
+			<div class="banner_inner">
+				<ul class="banner_ad">
+					<li class="banner_ad_01"></li>
+					<li class="banner_ad_02"></li>
+					<li class="banner_ad_03"></li>
+				</ul>
+				<button class="left"></button>
+				<button class="right"></button>
+				<ul class="select_point">
+					<li class="choice"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<ul class="banner_list">
+				<li class="banner_01"></li>
+				<li class="banner_02"></li>
+				<li class="banner_03"></li>
+			</ul>
+		</div>
+		<!--标语-->
+		<div id="slogan">
+			<div class="slogan_inner">
+				<dl>
+					<dt>鲜花电商龙头</dt>
+					<dd>销量领先，权威认证龙头企业</dd>
+				</dl>
+				<dl>
+					<dt>11年品牌 真实口碑</dt>
+					<dd>最近评价212216条</dd>
+				</dl>
+				<dl>
+					<dt>鲜花实拍秀展示</dt>
+					<dd>敢展现送前实拍的鲜花网</dd>
+				</dl>
+				<dl>
+					<dt>3小时送花</dt>
+					<dd>全国连锁，3小时送1000城市</dd>
+				</dl>
+				<dl>
+					<dt>200%退赔承诺</dt>
+					<dd>可靠的售后保障</dd>
+				</dl>
+			</div>
+		</div>
+		<!--限时特卖-->
+		<div id="timelimit">
+			<div class="timelimit_inner">
+				<ul class="time_list">
+					<li>
+						<h1>限时推荐</h1>
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li><img src="../../img/time_limit_04.jpg" /></li>
+				</ul>
+			</div>
+		</div>
+		<!--楼梯爱情鲜花-->
+		<div class="floor_1">
+			<div class="floor_1_inner">
+				<div class="floor_1_top">
+					<div class="floor_1_top_left">
+						<a href="">爱情鲜花</a>
+						<span>送·让你怦然心动的人</span>
+					</div>
+					<div id="floor_1_top_right">
+						<a href="">更多爱情鲜花&gt;&gt;</a>
+					</div>
+				</div>
+				<div class="floor_1_contant">
+					<div class="floor_1_contant_left">
+						<div class="top top1"></div>
+						<div class="bottom">
+							<a>爱情鲜花专区&gt;&gt;</a>
+						</div>
+					</div>
+					<ul class="floor_1_contant_right">
+						<li>
+							<img src="../../img/products_01.jpg" />
+							<dl>
+								<dt>鲜花 · 一往情深</dt>
+								<dd>￥<span>235</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_02.jpg" />
+							<dl>
+								<dt>鲜花 · 一心一意</dt>
+								<dd>￥<span>126</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_03.jpg" />
+							<dl>
+								<dt>鲜花 · 阳光海岸</dt>
+								<dd>￥<span>219</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_04.jpg" />
+							<dl>
+								<dt>鲜花 · 不变的承诺</dt>
+								<dd>￥<span>518</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_05.jpg" />
+							<dl>
+								<dt>鲜花 · 爱的诺言</dt>
+								<dd>￥<span>198</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_06.jpg" />
+							<dl>
+								<dt>鲜花 · 夏日恋曲</dt>
+								<dd>￥<span>366</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_07.jpg" />
+							<dl>
+								<dt>鲜花 · 爱的小确幸</dt>
+								<dd>￥<span>398</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_08.jpg" />
+							<dl>
+								<dt>鲜花 · 月光女神</dt>
+								<dd>￥<span>228</span></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--楼梯长辈鲜花-->
+		<div class="floor_1">
+			<div class="floor_1_inner">
+				<div class="floor_1_top">
+					<div class="floor_1_top_left">
+						<a href="">送长辈鲜花</a>
+						<span>赠·父母/恩师/长辈</span>
+					</div>
+					<div id="floor_1_top_right">
+						<a href="">更多送长辈鲜花&gt;&gt;</a>
+					</div>
+				</div>
+				<div class="floor_1_contant">
+					<div class="floor_1_contant_left">
+						<div class="top top2"></div>
+						<div class="bottom bottom_2">
+							<a>送长辈鲜花专区&gt;&gt;</a>
+						</div>
+					</div>
+					<ul class="floor_1_contant_right">
+						<li>
+							<img src="../../img/products_09.jpg" />
+							<dl>
+								<dt>鲜花 · 感激</dt>
+								<dd>￥<span>198</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_10.jpg" />
+							<dl>
+								<dt>鲜花 · 妈妈的爱</dt>
+								<dd>￥<span>150</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_11.jpg" />
+							<dl>
+								<dt>鲜花 · 幸福绽放</dt>
+								<dd>￥<span>158</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_12.jpg" />
+							<dl>
+								<dt>鲜花 · 健康长久</dt>
+								<dd>￥<span>412</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_13.jpg" />
+							<dl>
+								<dt>鲜花 · 馨情无限</dt>
+								<dd>￥<span>236</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_14.jpg" />
+							<dl>
+								<dt>鲜花 · 醉思念</dt>
+								<dd>￥<span>189</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_15.jpg" />
+							<dl>
+								<dt>鲜花 · 温馨思念</dt>
+								<dd>￥<span>235</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_16.jpg" />
+							<dl>
+								<dt>鲜花 · 圆满</dt>
+								<dd>￥<span>196</span></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--楼梯永生花-->
+		<div class="floor_1">
+			<div class="floor_1_inner">
+				<div class="floor_1_top">
+					<div class="floor_1_top_left">
+						<a href="">永生花</a>
+						<span>许·她一生承诺</span>
+					</div>
+					<div id="floor_1_top_right">
+						<a href="">更多永生花&gt;&gt;</a>
+					</div>
+				</div>
+				<div class="floor_1_contant">
+					<div class="floor_1_contant_left">
+						<div class="top top3"></div>
+						<div class="bottom bottom_3">
+							<a>永生花专区&gt;&gt;</a>
+						</div>
+					</div>
+					<ul class="floor_1_contant_right">
+						<li>
+							<img src="../../img/products_17.jpg" />
+							<dl>
+								<dt>永生花 · 十二星座经典红·金牛座</dt>
+								<dd>￥<span>288</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_18.jpg" />
+							<dl>
+								<dt>永生花 · 触摸</dt>
+								<dd>￥<span>158</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_19.jpg" />
+							<dl>
+								<dt>永生花 · 小公主</dt>
+								<dd>￥<span>489</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_20.jpg" />
+							<dl>
+								<dt>永生花 · 公主的水晶鞋·粉</dt>
+								<dd>￥<span>198</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_21.jpg" />
+							<dl>
+								<dt>永生花 · 时光的花</dt>
+								<dd>￥<span>368</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_22.jpg" />
+							<dl>
+								<dt>永生花 · To温暖你心</dt>
+								<dd>￥<span>269</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_23.jpg" />
+							<dl>
+								<dt>永生花 · 静谧时光</dt>
+								<dd>￥<span>398</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_24.jpg" />
+							<dl>
+								<dt>永生花 · 十二星座经典红·金牛座</dt>
+								<dd>￥<span>238</span></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--楼梯蛋糕-->
+		<div class="floor_2">
+			<div class="floor_2_inner">
+				<div class="floor_2_top cake_position">
+					<div class="floor_2_top_left">
+						<a href="">蛋糕</a>
+						<span>一起品味甜蜜时光</span>
+					</div>
+					<div class="select_city">
+						当前城市：
+						<a href="">请选择<span></span></a>
+						【请选择蛋糕配送城市】
+						<!--选择城市hover-->
+						<div class="select_city_list">
+							<p>请选择或输入蛋糕配送城市</p>
+							<dl>
+								<dt>热门城市</dt>
+								<dd>	
+									<a href="">北京</a>
+									<a href="">上海</a>
+									<a href="">广州</a>
+									<a href="">深圳</a>
+									<a href="">天津</a>
+								</dd>
+								<dd>	
+									<a href="">成都</a>
+									<a href="">重庆</a>
+									<a href="">西安</a>
+									<a href="">苏州</a>
+									<a href="">杭州</a>
+								</dd>
+								<dd>	
+									<a href="">南京</a>
+									<a href="">合肥</a>
+									<a href="">武汉</a>
+									<a href="">郑州</a>
+									<a href="">长沙</a>
+								</dd>
+								<dd>	
+									<a href="">南昌</a>
+									<a href="">哈尔滨</a>
+									<a href="">沈阳</a>
+									<a href="">长春</a>
+									<a href="">大连</a>
+								</dd>
+								<dd>	
+									<a href="">青岛</a>
+									<a href="">济南</a>
+									<a href="">福州</a>
+									<a href="">厦门</a>
+									<a href="">昆明</a>
+								</dd>
+								<dd>	
+									<a href="">贵阳</a>
+									<a href="">南宁</a>
+									<a href="">石家庄</a>
+									<a href="">海口</a>
+									<a href="">太原</a>
+								</dd>
+								<dd>	
+									<a href="">兰州</a>
+									<a href="">乌鲁木齐</a>
+									<a href="">唐山</a>
+									<a href="">呼和浩特</a>
+									<a href="">东莞</a>
+								</dd>
+								<dd>	
+									<a href="">佛山</a>
+									<a href="">宁波</a>
+									<a href="">无锡</a>
+									<a href="">温州</a>
+									<a href="">常州</a>
+								</dd>
+							</dl>
+							<input type="text" name="" id="" value="" placeholder="请输入配送城市"/>
+							<span class="serach_btn"></span>
+						</div>
+					</div>
+					<div id="floor_2_top_right">
+						<a href="">更多蛋糕&gt;&gt;</a>
+					</div>
+				</div>
+				<div class="floor_2_contant">
+					<div class="floor_2_contant_left">
+						<div class="top top1">
+							<a class="bg1">
+								蛋糕专区&gt;&gt;
+							</a>
+						</div>
+						<div class="bottom">
+							<dl>
+								<dt>按城市选购蛋糕</dt>
+								<dd>
+									<a href="">北京</a>
+									<a href="">上海</a>
+									<a href="">深圳</a>
+									<a href="">广州</a>
+									<a href="">天津</a>
+									<a href="">重庆</a>
+									<a href="">成都</a>
+								</dd>
+								<dd>
+									<a href="">沈阳</a>
+									<a href="">武汉</a>
+									<a href="">西安</a>
+									<a href="">杭州</a>
+									<a href="">南京</a>
+									<a href="">苏州</a>
+									<a href="">更多</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>蛋糕品牌</dt>
+								<dd>
+									<a href="">元祖蛋糕</a>
+									<a href="">好利来蛋糕</a>
+									<a href="">INCAKE蛋糕</a>
+								</dd>
+								<dd>
+									<a href="">幸福西饼蛋糕</a>
+									<a href="">诺心蛋糕</a>
+									<a href="">窝夫小子蛋糕</a>
+								</dd>
+								<dd>
+									<a href="">Mcake蛋糕</a>
+									<a href="">可颂坊蛋糕</a>
+									<a href="">米卡米卡蛋糕</a>
+								</dd>
+								<dd>
+									<a href="">Vcake蛋糕</a>
+									<a href="">一品轩蛋糕</a>
+									<a href="">美滋美客蛋糕</a>
+								</dd>
+								<dd>
+									<a href="">贝思客蛋糕</a>
+									<a href="">BONCAKE</a>
+									<a href="">全国蛋糕</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<ul class="floor_2_contant_right">
+						<li>
+							<img src="../../img/products_25.jpg" />
+							<dl>
+								<dt>元祖蛋糕 · 田园晓美(8寸)</dt>
+								<dd>￥<span>218</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_26.jpg" />
+							<dl>
+								<dt>好利来蛋糕 · 臻爱礼盒(6寸)</dt>
+								<dd>￥<span>239</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_27.jpg" />
+							<dl>
+								<dt>幸福西饼蛋糕 · 四重奏蛋糕(约2磅)</dt>
+								<dd>￥<span>198</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_28.jpg" />
+							<dl>
+								<dt>米卡米卡蛋糕 · 潘多拉 Pandora</dt>
+								<dd>￥<span>327</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_29.jpg" />
+							<dl>
+								<dt>诺心蛋糕 · 你好米菲 hallo miffy</dt>
+								<dd>￥<span>218</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_30.jpg" />
+							<dl>
+								<dt>Mcake蛋糕 · 鲜莓印雪</dt>
+								<dd>￥<span>298</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_31.jpg" />
+							<dl>
+								<dt>贝思客蛋糕 · PAPI PAPI熊蛋糕</dt>
+								<dd>￥<span>188</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_32.jpg" />
+							<dl>
+								<dt>INCAKE蛋糕 · 简爱（1.2磅）</dt>
+								<dd>￥<span>189</span></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--楼梯礼品-->
+		<div class="floor_2">
+			<div class="floor_2_inner">
+				<div class="floor_2_top">
+					<div class="floor_2_top_left">
+						<a href="">礼品</a>
+						<span>给她·最美好的礼物</span>
+					</div>
+					<div id="floor_2_top_right">
+						<a href="">更多礼品&gt;&gt;</a>
+					</div>
+				</div>
+				<div class="floor_2_contant">
+					<div class="floor_2_contant_left">
+						<div class="top top2">
+							<a class="bg2">
+								礼品专区&gt;&gt;
+							</a>
+						</div>
+						<div class="bottom">
+							<dl>
+								<dt>按礼品类别选购</dt>
+								<dd>
+									<a href="">水晶内雕-3D激光内雕水晶</a>
+								</dd>
+								<dd>
+									<a href="">进口/泰国保鲜花</a>
+									<a href="">金箔玫瑰/金箔画</a>
+								</dd>
+								<dd>
+									<a href="">精品音乐盒/八音盒</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>按礼品用途选购</dt>
+								<dd>
+									<a href="">生日礼物</a>
+									<a href="">约会/求爱礼品</a>
+									<a href="">结婚礼品</a>
+								</dd>
+								<dd>
+									<a href="">感谢/祝福礼品</a>
+									<a href="">拜访/探望礼品</a>
+								</dd>
+								<dd>
+									<a href="">结婚纪念日礼品</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<ul class="floor_2_contant_right">
+						<li>
+							<img src="../../img/products_33.jpg" />
+							<dl>
+								<dt>礼品 · 999纯金箔玫瑰+陶瓷花瓶</dt>
+								<dd>￥<span>138</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_34.jpg" />
+							<dl>
+								<dt>礼品 · 十八音水晶钢琴</dt>
+								<dd>￥<span>228</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_35.jpg" />
+							<dl>
+								<dt>礼品 · 宝石旋转木马/蓝</dt>
+								<dd>￥<span>158</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_36.jpg" />
+							<dl>
+								<dt>礼品 · Laderach 思念TA礼盒</dt>
+								<dd>￥<span>218</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_37.jpg" />
+							<dl>
+								<dt>礼品 · 心形3D水晶内雕陪你走到老</dt>
+								<dd>￥<span>169</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_38.jpg" />
+							<dl>
+								<dt>礼品 · 一路上有你</dt>
+								<dd>￥<span>338</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_39.jpg" />
+							<dl>
+								<dt>礼品 · Tangle Teezer心心相印礼盒</dt>
+								<dd>￥<span>199</span></dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../../img/products_40.jpg" />
+							<dl>
+								<dt>礼品 · 天使之恋</dt>
+								<dd>￥<span>138</span></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--评论-->
+		<div class="card">
+			<div class="card_inner">
+				<div class="card_style card1">
+					<div class="card_style_top">
+						<p>感动瞬间</p>
+						<span></span>
+					</div>
+					<ul class="card_list">
+						<li>
+							<a href="">希望你永远自由自在</a>
+						</li>
+						<li>
+							<a href="">爱你如初</a>
+						</li>
+						<li>
+							<a href="">我们一直在你身边</a>
+						</li>
+						<li>
+							<a href="">《38℃》</a>
+						</li>
+						<li>
+							<a href="">在最好的年华遇见你</a>
+						</li>
+						<li>
+							<a href="">我永远的小公举</a>
+						</li>
+					</ul>
+				</div>
+				<div class="card_style card2">
+					<div class="card_style_top">
+						<p>最新评价</p>
+						<span></span>
+					</div>
+					<ul class="card_list">
+						<li>
+							<dl>
+								<dt><img src="../../img/person_1.jpg"/></dt>
+								<dd>ali_226*</dd>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd>
+									<a href="">内容： 非常给力，时间刚刚好，很愉快的网购</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>2017-06-02</dt>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><img src="../../img/person_1.jpg"/></dt>
+								<dd>519887...</dd>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd>
+									<a href="">内容： 服务很满意</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>2017-06-02</dt>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><img src="../../img/person_1.jpg"/></dt>
+								<dd>sunerdo*</dd>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd>
+									<a href="">内容： 东西和照片匹配度很高, 收到的人很开心.</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>2017-06-02</dt>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="card_style card3">
+					<div class="card_style_top">
+						<p>热门资讯</p>
+						<span></span>
+					</div>
+					<ul class="card_list">
+						<ul>
+							<li>
+								<a href="">520送什么鲜花给女神？</a>
+							</li>
+							<li>
+								<a href="">520是什么意思？520情人节送</a>
+							</li>
+							<li>
+								<a href="">12星座异地恋如何维持？送你一份</a>
+							</li>
+							<li>
+								<a href="">看十二生肖收花如何反应？一图看出</a>
+							</li>
+							<li>
+								<a href="">送花的含义，生活中怎么送花？</a>
+							</li>
+							<li>
+								<a href="">送女朋友鲜花，送花卡片写什么？</a>
+							</li>
+						</ul>
+						<span class="line"></span>
+						<ul>
+							<li>
+								<a href="">双子座鲜花礼物专题</a>
+							</li>
+							<li>
+								<a href="">鲜花枝数与其对应的含意</a>
+							</li>
+							<li>
+								<a href="">鲜花寓意 浪漫花语</a>
+							</li>
+							<li>
+								<a href="">通用送花祝福语-经典送花祝福语</a>
+							</li>
+							<li>
+								<a href="">送花的常识与技巧</a>
+							</li>
+							<li>
+								<a href="">女孩都喜欢别人送鲜花吗？</a>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--二维码广告-->
+		<div class="QRcode">
+			<div class="QRcode_inner">
+				<div class="left">
+					<img src="../../img/app_qrcode.png" />
+					<div class="app_dowm">
+						<p>手机app下载</p>
+						<p>新人专享100元大礼包</p>
+						<img src="../../img/phone_icon.png" />
+					</div>
+				</div>
+				<div class="center">
+					<img src="../../img/home_manhua.jpg" />
+				</div>
+				<div class="right">
+					<img src="../../img/wc_code.png" />
+					<div class="wechat">
+						<p>关注微信</p>
+						<p>回复“礼物”有惊喜！"</p>
+						<p>活动多多，在花礼遇见幸福的自己</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--服务-->		
+		<div class="footer_server">
+			<div class="footer_server_inner">
+				<ul class="server_list">
+					<li><span></span>
+						<a href="">十一年品牌</a>
+					</li>
+					<li><span></span>
+						<a href="">销量领先</a>
+					</li>
+					<li><span></span>
+						<a href="">百万客户信赖</a>
+					</li>
+					<li><span></span>
+						<a href="">时尚原创花艺</a>
+					</li>
+					<li><span></span>
+						<a href="">订单实拍</a>
+					</li>
+					<li><span></span>
+						<a href="">低价保障年品牌</a>
+					</li>
+					<li><span></span>
+						<a href="">3小时配送年品牌</a>
+					</li>
+					<li><span></span>
+						<a href="">200%退赔承诺年品牌</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--尾部导航-->		
+		<div class="footer_nav">
+			<div class="footer_nav_inner">
+				<ul>
+					<li>
+						<a href="../../index/html/index.html">首页</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">媒体报道</a>
+					</li>
+					<li>
+						<a href="">联系方式</a>
+					</li>
+					<li>
+						<a href="">企业团购</a>
+					</li>
+					<li>
+						<a href="">友情链接</a>
+					</li>
+					<li>
+						<a href="">在线补款</a>
+					</li>
+					<li>
+						<a href="">为什么选择中国鲜花礼品网</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--尾部帮助-->		
+		<div class="footer_help">
+			<div class="footer_help_inner">
+				<dl>
+					<dt>客户服务</dt>
+					<dd>
+						<a href="">服务声明</a>
+						<a href="">支付说明</a>
+					</dd>
+					<dd>
+						<a href="">境外支付</a>
+						<a href="">配送说明</a>
+					</dd>
+					<dd>
+						<a href="">配送范围</a>
+						<a href="">订单查询</a>
+					</dd>
+					<dd>
+						<a href="">取消订单</a>
+						<a href="">补交货款</a>
+					</dd>
+					<dd>
+						<a href="">隐私条款</a>
+						<a href="">安全条款</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>热门咨询</dt>
+					<dd>
+						<a href="">中国鲜花礼品网购物流程</a>
+					</dd>
+					<dd>
+						<a href="">中国鲜花礼品网订购演示</a>
+					</dd>
+					<dd>
+						<a href="">鲜花网能配送哪些城市</a>
+					</dd>
+					<dd>
+						<a href="">鲜花售后服务是怎么样的？</a>
+					</dd>
+					<dd>
+						<a href="">我应该提前多久预订鲜花？</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>同城鲜花专区</dt>
+					<dd>
+						<a href="">深圳鲜花</a>
+						<a href="">北京鲜花</a>
+					</dd>
+					<dd>
+						<a href="">上海鲜花</a>
+						<a href="">广州鲜花</a>
+					</dd>
+					<dd>
+						<a href="">天津鲜花</a>
+						<a href="">重庆鲜花</a>
+					</dd>
+					<dd>
+						<a href="">成都鲜花</a>
+						<a href="">西安鲜花</a>
+					</dd>
+					<dd>
+						<a href="">武汉鲜花</a>
+						<a href="">南京鲜花</a>
+					</dd>
+					<dd>
+						<a href="">厦门鲜花</a>
+						<a href="">更多城市</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>联系我们</dt>
+					<dd>全国订购热线:400-889-8188(免长途费)</dd>
+					<dd>
+						<a href="">在线客服</a>
+					</dd>
+					<dd>7x24小时在线订购</dd>
+					<dd>客服工作时间：8:30-21:00</dd>
+					<dd>E-mail:
+						<a href="">kefu@hua.com</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!--网站信息-->		
+		<div class="auth">
+			<div class="auth_inner">
+				<div class="auth_inner_img">
+					<img src="../../img/cxwz.png" />
+					<img src="../../img/cxwz_01.gif" />
+					<img src="../../img/smyz.gif" />
+					<img src="../../img/slogan_01.png" />
+					<img src="../../img/zfb.gif" />
+					<img src="../../img/100.jpg" />
+					<img src="../../img/bico1.jpg" />
+					<img src="../../img/bico2.jpg" />
+					<img src="../../img/bico3.jpg" />
+				</div>
+				<div class="auth_bottom">
+					<p>
+						<a href="">中国花卉协会会员</a>
+						<a href="">中国电子商务协会会员</a>
+						<span>ICP经营许可证：<a href="">粤B2-20050744</a></span>
+						<a href="">粤ICP备09171662号 </a>
+						<span><img src="../../img/beian.png"/>粤公网安备44030502000373号 Copyright © 2005-2017</span>
+					</p>
+					<p>花礼网 （中国鲜花礼品网） www.hua.com 深圳市百易信息技术有限公司 中国鲜花网领先品牌，鲜花速递专家！</p>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div class="footer">
+			<div class="footer_inner">
+				<b>友联</b>
+				<a href="">中华取名网</a>
+				<a href="">深圳房产网</a>
+				<a href="">卷皮网</a>
+				<a href="">腕表</a>
+				<a href="">宝贝婚团网</a>
+				<a href="">苗木</a>
+				<a href="">佐卡伊珠宝网</a>
+				<a href="">砖石婚介定制</a>
+				<a href="">杂志</a>
+				<a href="">中国青少年艺术教育网</a>
+				<a href="">装修网</a>
+				<a href="">淘狗网</a>
+				<a href="">礼无忧网</a>
+				<a href="">宠物狗</a>
+				<a href="">机友网</a>
+				<a href="">礼物网</a>
+				<a href="">装修</a>
+				<a href="">新三板</a>
+				<a href="">商标注册</a>
+				<a href="">眼镜店</a>
+			</div>
+		</div>
+		<!--侧栏-->
+		<div class="right_imessage">
+			<span class="user" onclick="location.href='../../Login/html/login.html'"></span>
+			<div class="shopping_nav" onclick="location.href='../../Shopping/html/Shopping.html'">
+				<i class="shopping"></i>
+				<p>购物车</p>
+				<b class="num npc">0</b>
+			</div>
+			<span class="favorite"></span>
+			<span class="history"></span>
+			<span class="phone"></span>
+			<span class="person_servor"></span>
+			<span class="qrcode_right"></span>
+			<span class="advice"></span>
+			<span class="backtop"></span>
+		</div>
+	</body>
+</html>
